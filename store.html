@@ -112,65 +112,7 @@ margin-top:50px;
         <a class="button" href="">Buy on...</a>
  </section>   </div>
 <br>
- <h2>Find your interests</h2>
-  <div>
-        <label>What's your name?
-        <input id="name" type="text">
-        </label><br><br>
-           <label>What is your last name?
-        <input id="name" type="text">
-        </label>
-        <br><br>
-        <label>What interests you?
-        <select id="lang">
-            <option value="na">Nature</option>
-            <option value="sp">Space</option>
-            <option value="fo">Foods</option>
-             <option value="ca">Cartoon</option>
-        </select>
-        </label>
-        <br>
-        <button id="button" type="button">Submit Interests</button>
-        <div id="message"></div>
-    </div>
-  <script>
-  // Step 1: Find the element we want the event on
-  var button = document.getElementById("button");
-  // Step 2: Define the event listener function
-     
-  var onButtonClick = function() {
-    var name = document.getElementById("name").value;
-    var lang = document.getElementById("lang").value;
-    var greeting;
-    if (lang === "na") {
-        greeting = "Check out list 1. Welcome, " + name;
-    } else if (lang === "sp") {
-        greeting = "Check out list 2. Welcome, " + name;
-    } else if (lang === "fo") {
-        greeting = "Check out list 3.Welcome, " + name;
-    }
-    else if (lang === "ca") {
-        greeting = "Check out list 4.Welcome, " + name;
-    }
-    document.getElementById("message").textContent += greeting;  
-  };
-  // Step 3: Attach event listener to element
-  button.addEventListener("click", onButtonClick);
-  </script>
-<h1>List</h1>
-<table><tr> <td></td>
-                <td><a target="_blank" href="not there">List 1.</a></td>
-            </tr>
-<tr> <td></td>
-                <td><a target="_blank" href="not there">List 2</a></td>
-            </tr>
-   <tr> <td></td>
-                <td><a href="blank">List 3.</a></td>
-            </tr>         
-             <tr> <td></td>
-                <td><a href="blank">List 4</a></td>
-            </tr>    
-</table>
+
     <footer>
         <p>© 2026 My Poetry Brand</p>
     </footer>
